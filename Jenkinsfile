@@ -7,7 +7,7 @@ pipeline {
 
   parameters {
     string(name: 'BRANCH_NAME', defaultValue: 'main', description: 'Branch to build from')
-    string(name: 'STUDENT_NAME', defaultValue: 'your name', description: 'Provide your name here — no name, no marks')
+    string(name: 'STUDENT_NAME', defaultValue: 'Usman Shaukat', description: 'Provide your name here — no name, no marks')
     choice(name: 'ENVIRONMENT', choices: ['dev', 'qa', 'prod'], description: 'Select environment')
     booleanParam(name: 'RUN_TESTS', defaultValue: true, description: 'Run Jest tests after build')
   }
